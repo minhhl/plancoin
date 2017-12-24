@@ -13,4 +13,5 @@ $(document).ready(function () {
     scrollContainer: null // optional scroll container selector, otherwise use window
   });
   wow.init();
+  $('.data').slick();
 });

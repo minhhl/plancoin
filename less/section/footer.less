@@ -1,0 +1,131 @@
+#footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  padding-bottom: 60px;
+  .breadcrumb-ft {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    li {
+      display: inline-block;
+      &:after {
+        content: '>';
+        display: inline-block;
+        margin-left: 3px;
+        color: #fff;
+      }
+      &:last-child{
+        &:after{
+          content: '';
+        }
+      }
+      a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+      }
+    }
+  }
+  .content-footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    .menu-footer {
+      width: 100%;
+      margin-bottom: 25px;
+      li {
+        display: inline-block;
+        padding: 0 35px;
+        line-height: 20px;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        &:last-child{
+          border-right: 0;
+        }
+        a {
+          color: #fff;
+          font-size: 20px;
+          text-decoration: none;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .social-footer {
+    width: 100%;
+    margin-bottom: 25px;
+    li {
+      display: inline-block;
+      margin: 0 20px;
+      a{
+        display: block;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  p {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+}
+
+.custom-page {
+  display: flex;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 0 5px 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  .search-color {
+    border: 1px solid #fff;
+    height: 40px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 8px 0;
+    width: 350px;
+    input {
+      width: 100%;
+      background: url(../img/small-logo.png) no-repeat 10px center;
+      border: 0;
+      outline: 0;
+      height: 38px;
+      padding-left: 40px;
+      padding-right: 55px;
+      color: #fff;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 40px;
+      background: 0;
+      border: 0;
+      outline: none;
+      color: #fff;
+    }
+  }
+  .custom-page #carousel-color {
+    flex: inherit;
+    width: 700px;
+    margin-left: 25px;
+  }
+  .color-code {
+    background: url(../img/wave.png) no-repeat right center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    .translate(0, -50%);
+    padding-right: 55px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

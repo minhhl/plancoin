@@ -1,0 +1,87 @@
+#header {
+  .top-header {
+    .logo-block {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 10px auto 25px;
+      a {
+        display: inline-block;
+        text-align: center;
+        img {
+          display: block;
+          width: auto;
+        }
+      }
+    }
+  }
+  .body-header {
+    .galaxy-nav {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      li {
+        display: inline-block;
+        margin-right: 15px;
+        width: 160px;
+        min-height: 65px;
+        vertical-align: top;
+        &:hover, &:focus {
+          background-color: transparent;
+        }
+        a {
+          position: relative;
+          display: block;
+          width: 160px;
+          color: white;
+          padding: 0 0 0 70px;
+          vertical-align: top;
+          height: 50px;
+          span {
+            position: absolute;
+            text-align: left;
+            display: block;
+            left: 70px;
+            top: 50%;
+            .translate(0, -50%);
+          }
+          i {
+            &.icon {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 60px;
+              height: 61px;
+              &.login {
+                background: url("../img/icon-header/login.png") no-repeat center/cover;
+              }
+              &.color {
+                background: url("../img/icon-header/color.png") no-repeat center/cover;
+              }
+              &.paint-can {
+                background: url("../img/icon-header/paint-can.png") no-repeat center/cover;
+              }
+              &.galaxy {
+                background: url("../img/icon-header/galaxy.png") no-repeat center/cover;
+              }
+              &.paint {
+                background: url("../img/icon-header/paint.png") no-repeat center/cover;
+              }
+              &.location {
+                background: url("../img/icon-header/location.png") no-repeat center/cover;
+              }
+            }
+          }
+          &:hover, &:focus {
+            .transition();
+            background-color: transparent;
+            span, i {
+              opacity: 0.85;
+              .transition();
+            }
+          }
+        }
+      }
+    }
+  }
+}
